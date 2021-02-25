@@ -5,7 +5,7 @@
 }
 
 body{
-    font-size: 14px;
+    font-size: 20px;
 }
 #header{
     background-color: rgb(20, 82, 175);
@@ -81,4 +81,17 @@ margin: 20px 0;
 }
 .bold-text{
     font-weight: bold;
+}
+.support{
+    background-color: yellow;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.phone-number {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #fff;
 }
