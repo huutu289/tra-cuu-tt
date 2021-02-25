@@ -94,7 +94,9 @@ body{
     padding: 0;
     margin: 0;
 }
-
+#main .qr .time{
+    margin-top: 5px;
+}
 .yello-dot{
     width: 5px;
     height: 5px;
@@ -110,6 +112,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-color: rgb(20, 82, 175);
 }
 .support{
     background-color: yellow;
