@@ -63,19 +63,16 @@ body{
     min-height: 500px;
     justify-content: space-between;
 }
-#main p{
-    font-size: 18px;
-    line-height: 26px;
-}
 
-.qr{
+
+.qr-block{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 400px;
 }
-.title{
+#main .qr-block .qr-title>p{
     background-color: #275e9e;
     color: white;
     
@@ -86,9 +83,10 @@ body{
     margin: 0;
     padding: 4px 10px;
     text-align: center;
+    line-height: 20px;
 }
-#main .qr .line-bottom{
-    border-top: 3px solid rgb(20, 82, 175);
+#main>.qr-block>.line-bottom{
+    border-top: 3px solid #275e9e;
     width: 320px;
     
     padding: 0;
@@ -97,7 +95,7 @@ body{
 #main .qr .time{
     margin-top: 5px;
 }
-.yello-dot{
+#main>.qr-block>.yello-dot{
     width: 5px;
     height: 5px;
     background-color: #f4c669;
@@ -114,6 +112,7 @@ body{
     justify-content: center;
     position: relative;
     background-color: #275e9e;
+    margin-top: -10px;
 }
 .support{
     background-color: yellow;
@@ -143,4 +142,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.m-top-10{
+    margin-top: 10px;
+}
+.qr-time p,.last-destination p{
+    line-height: 22px;
+}
+.qr-block+.qr-block{
+    margin-bottom: 10px;
+}
+.qr-block:first-child{
+    margin-bottom: 10px;
 }
