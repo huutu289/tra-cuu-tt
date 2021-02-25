@@ -1,39 +1,54 @@
+/* reset css */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* global variables */
+:root{
+    --main-bg-color: #275e9e;
+    --white-text-color: #fff;
+    --white-bg-color:#fff;
+}
+
 html{
     font-family: Arial, Helvetica, sans-serif;
+    /* 100% = 16px */
+    font-size: 100%;
+
 }
+
 body{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: lavender;
+    
     height: 100vh;
     max-width: 420px;
    margin: auto;
    
 }
 #header{
-    background-color: #275e9e;
+    background-color: var(--main-bg-color);
+    /* background-color: rgb(0, 38, 255,0.7); */
     background-repeat: no-repeat;
-    color: #fff;
+    color: var(--white-text-color);
     padding: 0;
     margin: 0;
     height: 174px;
+    
 }
 #header>img{
     width: 100%;
     height: 50px;
-  
+    
 }
 #search{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--white-bg-color);
     padding: 4px 0;
     width: 100%;
 }
 #search>p{
-    font-size: 12px;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 
@@ -51,14 +66,14 @@ body{
 
 }
 #avarta>p{
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 #main{
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--white-bg-color);
     width: 100%;
     min-height: 500px;
     justify-content: space-between;
@@ -73,7 +88,7 @@ body{
     max-width: 400px;
 }
 #main .qr-block .qr-title>p{
-    background-color: #275e9e;
+    background-color: var(--main-bg-color);
     color: white;
     
     border-top-left-radius: 10px;
@@ -86,7 +101,7 @@ body{
     line-height: 20px;
 }
 #main>.qr-block>.line-bottom{
-    border-top: 3px solid #275e9e;
+    border-top: 3px solid var(--main-bg-color);
     width: 320px;
     
     padding: 0;
@@ -110,8 +125,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     position: relative;
-    background-color: #275e9e;
+    background-color: var(--main-bg-color);
     margin-top: -10px;
 }
 .support{
@@ -125,7 +141,7 @@ body{
 }
 .phone-number {
     color: red;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     
 }
