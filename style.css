@@ -56,7 +56,7 @@ body{
 
 }
 #avarta{
-
+    margin-top: 10px;
 }
 #avarta>img{
     width: 120px;
@@ -71,6 +71,7 @@ body{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
+    margin: 10px 0;
 }
 
 #main{
